@@ -18,6 +18,7 @@
     flex-direction: column;
     color: #fafafa;
     background: #222;
+    font-family: Arial, Helvetica, sans-serif;
   }
   main {
     flex: 1;
@@ -33,14 +34,33 @@
   }
   header {
     padding: 20px 20px;
+    display: flex;
+    align-items: baseline;
   }
-  h1 {
+  header > * {
     margin: 0;
+  }
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+  a:hover {
+    border-bottom: 1px solid;
+  }
+  header > p {
+    margin-left: 10px;
+    opacity: 0.8;
+  }
+  header > a {
+    margin-left: auto;
+    font-size: 1.25em;
   }
 </style>
 
 <header>
   <h1>Codem Ipsum</h1>
+  <p>by <a href="https://pomb.us">@pomber</a></p>
+  <a href="https://github.com/pomber/codem-ipsum">GitHub</a>
 </header>
 
 <main>
